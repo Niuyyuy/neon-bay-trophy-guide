@@ -1,14 +1,17 @@
-// A working gta6-trophy-guide-01 entry (Node 22, standard library only): the guide is this directory's app/ folder,
-// plain static files a browser opens at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
-// over the network, and its trophy list and guides are app/data/trophies.json. The program hands it in: it copies app/
-// and screenshots/ from beside this file to /output and writes /output/dossier.json, the summary the judge reads (your
-// screenshots, the first load's files and bytes, and your source), with the vendored make.fun library. Leave
-// vendor/makefun-frontend.ts as it is: the scorer requires dossier.json to be byte for byte what its own copy writes.
-//
-// Only the plumbing, not a winner: a plain checklist of the 55 trophies with a one-line hint each. Write a real guide
-// for every trophy in your own words, a roadmap to the platinum, filters and a spoiler setting in app/, put 3 or 4 PNG
-// or JPEG screenshots of it in screenshots/ (the first by name is the cover; shots.json says which views this
-// starter's were taken of), and run it.
+// Neon Bay Trophy Guide — my entry for make.fun's gta6-trophy-guide-01
+// (Node 22, standard library only). The guide itself is app/: plain static
+// files a browser opens at app/index.html — ES modules, CSS, no build step,
+// fully offline, nothing loaded over the network. Its trophy list, with a
+// guide and a named source for every trophy, is app/data/trophies.json; the
+// three-stage roadmap to the platinum is app/data/roadmap.json. This program
+// hands the entry in: it copies app/ and screenshots/ from beside this file
+// to /output and writes /output/dossier.json, the summary the judge reads
+// (the screenshots, the first load's files and bytes, and the source), using
+// the vendored make.fun library. Leave vendor/makefun-frontend.ts alone:
+// the scorer requires dossier.json to be byte for byte what its own copy
+// writes. The app's tracker — checklist, filters, spoiler setting, export
+// and import — is app/app.js; app/src/shots.js stages the four
+// deterministic scenes the screenshots are taken of.
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
