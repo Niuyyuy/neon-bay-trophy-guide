@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Bay Trophy Guide — Grand Theft Auto VI, all 55 PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Neon Bay Trophy Guide · Grand Theft Auto VI · PlayStation 5</p>
+    <h1>Every trophy, tracked to the Platinum</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a guide in our own words and a named source for each one. No online trophies. About 200 hours to the Platinum.</p>
+  </div>
+  <div class="progress" id="progressBox" aria-live="polite">
+    <p class="progressCount" id="progress">0 of 55 earned</p>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="progressGrades" id="progressGrades"></p>
+  </div>
+</header>
+
+<aside class="alert" id="missableAlert">
+  <strong>1 missable trophy — read this first.</strong>
+  <span id="missableText"></span>
+</aside>
+
+<section class="roadmap" id="roadmapSection" aria-label="Roadmap to the Platinum">
+  <h2 id="roadmapTitle">Road to the Platinum</h2>
+  <p id="roadmapIntro"></p>
+  <div class="stages" id="roadmapStages"></div>
+  <h3>100% Completion checklist at a glance</h3>
+  <ul class="checklist" id="roadmapChecklist"></ul>
+  <p class="sources" id="roadmapSources"></p>
+</section>
+
+<div class="controls" id="controls">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or place…" autocomplete="off"></label>
+  <div class="kinds" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="toggle"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <label class="toggle"><input id="spoiler" type="checkbox"> Spoiler-free mode</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</div>
+
+<p class="listMeta" id="listMeta"></p>
+<main id="list" aria-live="polite"></main>
+
+<footer>
+  <p>Names, descriptions and grades are the official PlayStation list, as listed by Exophase and PSNProfiles. Guides are written for this page in our own words; each one names its source beside it. No Rockstar logo, artwork or screenshot is used here — the look is our own. This guide works offline: it fetches nothing.</p>
+</footer>
+<script type="module" src="app.js"></script>
+<script type="module" src="src/shots.js"></script>
+</body>
+</html>
